@@ -1,347 +1,438 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Leo.dev | Data. Code. Clarity.</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-stack developer and data analyst showcasting modern web projects and practical problem-solving.">
+    <title>Leo.Dev | Code. Data. Clarity.</title>
+    <link rel="icon" type="image/png" href="./Pics/icon.png">
 
-<!-- ===== FAVICON ===== -->
-<link rel="icon" type="image/png" href="./Portfolio_Pics/tab-2.png" sizes="48x48">
-<link rel="apple-touch-icon" href="./Portfolio_Pics/tab-2.png">
+    <!-- CSS link -->
+    <link href="style.css" rel="stylesheet">
 
-<!-- ===== REMIXICONS ===== -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-<!-- ===== BOXICONS =====  -->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
 
-<!-- ===== CSS ===== -->
-<link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+            <ul class="nav-links" id="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                    <li class="CV"><a href="/CV/Resume (2024) - Nicholas L Salgado.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></li>
 
-    <!-- ===== NAV =====  -->
-    <nav class="nav">
-        <ul class="nav__list">
+                <li class="theme-icons">
+                    <i id="lightIcon" class='bx bxs-moon'></i>
+                    <i id="darkIcon" class='bx bxs-sun'></i>
+                </li>
 
-            <li>
-                <a href="#home" title="Home" class="nav__link active-link">
-                    <i class="ri-home-line"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#projects" title="Projects" class="nav__link">
-                    <i class="ri-folder-line"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#contact" title="Contact" class="nav__link">
-                    <i class="ri-send-plane-line"></i>
-                </a>
-            </li>
-
-        </ul>
-    </nav>
+            </ul>        
+        </nav>
 
 
-    <!-- ===== MAIN =====  -->
-    <main class="main">
+        <div class="edge-menu">
+            <div class="edge-content">
+                <a href="#" >Home</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact"> Contact Me</a>
+                <a href="/CV/Resume (2024) - Nicholas L Salgado.pdf" target="_blank">Download CV</a>
 
-        <!-- ===== HOME =====  -->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-
-                <!-- ===== PERFIL ===== -->
-                <div class="perfil">
-                    <img src="./Portfolio_Pics/M5.png" alt="image" class="perfil__img">
-
-                    <div class="perfil__data">
-                        <h1 class="perfil__name">Leo <br> Salgado</h1>
-
-                        <div class="perfil__buttons">
-                            <a href="#projects" class="button">Projects</a>
-                            <a href="#contact" class="button button__black">Contact Me</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- ===== INFO =====  -->
-                <div class="info">
-
-                    <div class="info__image">
-                        <img src="./Portfolio_Pics/M6.png" alit="image" class="info__img">
-                    </div>
-
-                    <p class="info__description">
-                        From code to insight, keeping it seamless.
-                        <br>
-                        Where clean design meets data-driven thinking.
-
-                    </p>
-
-                    <a href="./Portfolio_Pics/Resume (2024) - Nicholas L Salgado.pdf" download target="_blank" class="button button__black">Download CV</a>
-                </div>
-
-                <!-- ===== ABOUT =====  -->
-                <div class="about">
-                    <h3 class="about__name">
-                        <b>Data Scientist | Software Engineer</b>
-                    </h3>
-
-                    <p class="about__description">
-                        Software Engineer (Full-Stack Focus) and data scientist blending clean design with simple / smart solutions. 
-                        A recent Berkeley College (Woodland Park) grad focused on building seamless, data-driven web experiences.
-                    </p>
-
-                    <div class="about__social">
-
-                        <a href="https://www.linkedin.com/in/nicholas-l-salgado" class="about__link">
-                        <i class='bx bxl-linkedin-square'></i>
-                        </a>
-
-                        <a href="https://github.com/iamln84" class="about__link">
-                        <i class='bx bxl-github'></i>
-                        </a>
-
-                        <a href="https://x.com/iamln84" class="about__link">
-                        <i class='bx bxl-twitter'></i>
-                        </a>
-                    </div>
-
-                    <div class="about__image">
-                        <img src="./Portfolio_Pics/M4.png" alt="image" class="about__img">
-                    </div>
-
-                    <p class="about__note">
-                        Code. Design. Analyze. Repeat... and connect. 
-                        Let’s talk about what we can build together.
-                    </p>
-
-                    <a href="#contact" class="button">Contact Me</a>
-                </div>
-
-                <!-- ===== SKILLS =====  -->
-                <div class="skills">
-                    <h2 class="skills__title">Skills</h2>
-
-                    <div class="skills__items">
-                        <img src="./Portfolio_Pics/html.svg" alt="HTML" class="skills__item">
-                        <img src="./Portfolio_Pics/CSS.svg" alt="CSS" class="skills__item">
-                        <img src="./Portfolio_Pics/javascript.svg" alt="JavaScript" class="skills__item">
-                        <img src="./Portfolio_Pics/python.svg" alt="Python" class="skills__item">
-                        <img src="./Portfolio_Pics/GitHub.png" alt="GitHub" class="skills__item">
-                        <img src="./Portfolio_Pics/PowerBi.svg" alt="PowerBi" class="skills__item">
-                        <img src="./Portfolio_Pics/VSC.svg" alt="Visual Studio Code" class="skills__item">
-                    </div>
-
-                    <p class="skills__description">
-                        Check out the recent projects to see the 
-                        work done with these web technologies.
-                    </p>
+                <div class="theme-icons">
+                    <i id="lightIconMobile" class='bx bxs-moon'></i>
+                    <i id="darkIconMobile" class='bx bxs-sun'></i>
                 </div>
             </div>
-        </section>
+        </div>
 
-                <!-- ===== PROJECTS ===== -->
-        <section class="projects section" id="projects">
-            <h2 class="section__title">PROJECTS</h2>
+    </header>
 
-            <div class="projects__container container grid">
+    <section class="bio">
 
-                <article class="projects__card">
-                    <a href="#" target="_blank" class="projects__image">
-                        <img src="./Portfolio_Pics/SC.png" alt="project 1" class="projects__img">
-                    </a>
+        <img class="profile-image" src="./Pics/Portfolio_Pic.png" alt="Profile Picture"/>
 
-                    <div class="projects__data">
-                        <h3 class="projects__name">Shaking Crab Website</h3>
-                        <p class="projects__description">
-                    A dynamic, sensory-rich digital seafood boil—marrying crisp, 
-                    responsive design with tuned effects give the page personality, like the crackle of a grill. 
-                        </p>
+        <div>
+            <h2>
+                Hello, <br>
+                My name is Nicholas Salgado<br>
+                I'm a <span class='typing'></span>
+            </h2>
 
-                        <div class="source__link">
-                        <img src="./Portfolio_Pics/html.svg" alt="HTML" class="skills__item">
-                        <img src="./Portfolio_Pics/CSS.svg" alt="CSS" class="skills__item">
-                        <img src="./Portfolio_Pics/javascript.svg" alt="JavaScript" class="skills__item">
-                        </div>
+            <p class="about">A Berkeley College (Woodland Park) graduate focused on learning, building, and delivering real-world data and full-stack projects.
+            Here, I showcase my web design skills (HTML, CSS, JS), UI visualization ability, programming (Python), and data analysis (SQL, Numpy, Pandas).
+            In my free time I enjoy photography, reading, and watching soccer. Explore my work, and let's connect to discuss how I can contribute to your next big idea!</p>
 
-                        <a href="#" target="_blank" class="projects__button">
-                            <i class="ri-link"></i>
-                            <span>Visit Project</span>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="projects__card">
-                    <a href="#" target="_blank" class="projects__image">
-                        <img src="./Portfolio_Pics/VEB.png" alt="Barcafy" class="projects__img">
-                    </a>
-
-                    <div class="projects__data">
-                        <h3 class="projects__name">Barçafy</h3>
-                        <p class="projects__description">
-                            Barçafy is a bold, data-driven Barça experience built for fans who want to decode matches, explore players, and track transfers—all wrapped in stunning Blaugrana design.
-                        </p>
-
-                        <div class="source__link">
-                            <img src="./Portfolio_Pics/html.svg" alt="HTML" class="skills__item">
-                            <img src="./Portfolio_Pics/CSS.svg" alt="CSS" class="skills__item">
-                            <img src="./Portfolio_Pics/javascript.svg" alt="JavaScript" class="skills__item">
-                        </div>
-
-                        <a href="#" target="_blank" class="projects__button">
-                            <i class="ri-link"></i>
-                            <span>Visit Project</span>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="projects__card">
-                    <a href="#" target="_blank" class="projects__image">
-                        <img src="./Portfolio_Pics/pic.png" alt="project 1" class="projects__img">
-                    </a>
-
-                    <div class="projects__data">
-                        <h3 class="projects__name">App</h3>
-                        <p class="projects__description">
-                            N/A
-                        </p>
-
-                        <!-- <div class="source__link"> -->
-                            <!-- <img src="./Portfolio_Pics/python.svg" alt="Python" class="skills__item">
-                            <img src="./Portfolio_Pics/GitHub.png" alt="GitHub" class="skills__item">
-                            <img src="./Portfolio_Pics/PowerBi.svg" alt="PowerBi" class="skills__item">
-                            <img src="./Portfolio_Pics/VSC.svg" alt="Visual Studio Code" class="skills__item"> -->
-                        <!-- </div> -->
-
-                        <a href="#" target="_blank" class="projects__button">
-                            <!-- <i class="ri-link"></i>
-                            <span>Visit Project</span> -->
-                        </a>
-                    </div>
-                </article>
-
-                <article class="projects__card">
-                    <a href="#" target="_blank" class="projects__image">
-                        <img src="./Portfolio_Pics/pic.png" alt="project 1" class="projects__img">
-                    </a>
-
-                    <div class="projects__data">
-                        <h3 class="projects__name">App</h3>
-                        <p class="projects__description">
-                            N/A
-                        </p>
-
-                        <!-- <div class="source__link"> -->
-                            <!-- <img src="./Portfolio_Pics/PowerBi.svg" alt="PowerBi" class="skills__item"> -->
-                        <!-- </div> -->
-
-                        <a href="#" target="_blank" class="projects__button">
-                            <!-- <i class="ri-link"></i> -->
-                            <!-- <span>Visit Project</span> -->
-                        </a>
-                    </div>
-                </article>
-
-                <article class="projects__card">
-                    <a href="#" target="_blank" class="projects__image">
-                        <img src="./Portfolio_Pics/NYCFC.png" alt="project 1" class="projects__img">
-                    </a>
-
-                    <div class="projects__data">
-                        <h3 class="projects__name">New York City FC Dashboard</h3>
-                        <p class="projects__description">
-                A clean, data-driven interface that showcases collected match, club, and player stats through interactive graphs. 
-                Responsive design making the insights easy to navigate, turning static data into a visually 
-                engaging experience.
-                        </p>
-
-                        <div class="source__link">
-                            <img src="./Portfolio_Pics/GitHub.png" alt="GitHub" class="skills__item">
-                            <img src="./Portfolio_Pics/PowerBi.svg" alt="PowerBi" class="skills__item">
-                        </div>
-
-                        <a href="#" target="_blank" class="projects__button">
-                            <i class="ri-link"></i>
-                            <span>Visit Project</span>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="projects__card">
-                    <a href="#" target="_blank" class="projects__image">
-                        <img src="./Portfolio_Pics/pic.png" alt="project 1" class="projects__img">
-                    </a>
-
-                    <div class="projects__data">
-                        <h3 class="projects__name">Dataset</h3>
-                        <p class="projects__description">
-                            N/A
-                        </p>
-
-                        <!-- <div class="source__links"> -->
-                            <!-- <img src="./Portfolio_Pics/GitHub.png" alt="GitHub" class="source__link"> -->
-                        <!-- </div> -->
-
-                        <a href="#" target="_blank" class="projects__button">
-                            <!-- <i class="ri-link"></i> -->
-                            <!-- <span>Visit Project</span> -->
-                        </a>
-                    </div>
-                </article>
-
+            <div class="social">
+            <a href="https://x.com/explore" target="_blank"><i class='social_icon bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/in/nicholas-l-salgado/" target="_blank"><i class='social_icon bx bxl-linkedin'></i></a>
+            <a href="https://github.com/iamln84" target="_blank"><i class='social_icon bx bxl-github'></i></a>
             </div>
-        </section>
 
-                <!-- ===== CONTACT ME ===== -->
-                <section class="contact section" id="contact">
-                    <h2 class="section__title">CONTACT ME</h2>
+        </div>
+    </section>
 
-                    <div class="contact__container container grid">
-                        <form action="" class="contact__form grid" id="contact-form">
-                            <div class="contact__group grid">
-                                <input type="text" name="user_name" placeholder="Name" class="contact__input">
-                                <input type="email" name="user_email" placeholder="Email" class="contact__input">
-                            </div>
+    <section id="Projects">
+        <h2 class="Projects">Projects</h2>
+        <div class="project-grid">
 
-                            <textarea name="user_message" placeholder="Message" class="contact__input contact__area"></textarea>
+            <!-- Project #1  -->
+            <article class="project-card">
+                <span class="project-label">Front-End Development</span>
+                <h3 class="project-title">Shaking Crab Website</h3>
+                <p class="project-description">
+                    A full redesign of the Shaking Crab website, transforming the original layout into a cleaner, more modern, and more user-friendly experience. This version
+                    emphasizes visual clarity, responsive behavior, and a more intentional structure.
+                </p>
+                <img class='img' src="./Pics/Project1.png" alt="Shaking Crab Website">
 
-                            <button type="submit" class="button contact__button">Send Message</button>
+                <div class="project-skills">
+                    <i class='bx bxl-html5'></i>
+                    <i class='bx bxl-css3'></i>
+                    <i class='bx bxl-javascript'></i>
+                </div>
 
-                            <p class="contact__message" id="contact-message"></p>
-                        </form>
-                    </div>
-                </section>
+                <div class="project-links">
 
-                <!-- ===== FOOTER ===== -->
-                <footer class="footer">
-                    <span class="footer__copy">
-                        &#169; 2025 | Developed by iamln84 | All Rights Reserved
-                    </span>
-                </footer>
+                    <a href="https://github.com/iamln84" target="_blank" aria-label="GitHub">
+                         <p>Github <i class='bx bxs-right-top-arrow-circle'></i></p>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Live Site">
+                        <p>Live Site <i class='bx bxl-jquery bx-rotate-180'></i></p>
+                    </a>
 
-    </main>
+                </div>
 
-<!-- ===== SCROLL UP =====  -->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
-
-
-<!-- ===== SCROLLREVEAL =====  -->
-        <script src="./scrollreveal.min.js"></script>
+            </article>
 
 
-<!-- ===== EMAIL JS =====  -->
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            <!-- Project #2  -->
+            <article class="project-card">
+                <span class="project-label">Data Analysis</span>
+                <h3 class="project-title">EPL 2024/25 Dashboard</h3>
+                <p class="project-description">
+                    A full redesign of the Shaking Crab website, transforming the original layout into a cleaner, more modern, and more user-friendly experience. 
+                    This version emphasizes visual clarity, responsive behavior, and a more intentional structure.
+                </p>
+                <img class="img" src="./Pics/Project2.png" alt="EPL Logo">
+
+                <div class="project-skills">
+                    <i class='bx bxs-bar-chart-alt-2'></i> 
+                    <i class='bx bxl-python'></i>
+                </div>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/iamln84" target="_blank" aria-label="GitHub">
+                         <p>Github <i class='bx bxs-right-top-arrow-circle'></i></p>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Live Site">
+                        <p>Live Site <i class='bx bxl-jquery bx-rotate-180'></i></p>
+                    </a>
+
+                </div>
+
+            </article>
 
 
-<!-- ===== MAIN JS =====  -->
-        <script src="main.js"></script>
+            <!-- Project #3 -->
+            <article class="project-card">
+                <span class="project-label">Product Design</span>
+                <h3 class="project-title">TUI Experiences</h3>
+                <p class="project-description">
+                    A full redesign of the Shaking Crab website, transforming the original layout into a cleaner, more modern, and more user-friendly experience. 
+                    This version emphasizes visual clarity, responsive behavior, and a more intentional structure.
+                </p>
+                <img class="img" src="./Pics/Portfolio_Pic.png" alt="TUI project mockup">
 
-    </body>
-    </html>
+                <div class="project-links">
+
+                    <a href="https://github.com/iamln84" target="_blank" aria-label="GitHub">
+                         <p>Github <i class='bx bxs-right-top-arrow-circle'></i></p>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Live Site">
+                        <p>Live Site <i class='bx bxl-jquery bx-rotate-180'></i></p>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Project #4 -->
+            <article class="project-card">
+                <span class="project-label">Product Design</span>
+                <h3 class="project-title">TUI Experiences</h3>
+                <p class="project-description">
+                    A full redesign of the Shaking Crab website, transforming the original layout into a cleaner, more modern, and more user-friendly experience. 
+                    This version emphasizes visual clarity, responsive behavior, and a more intentional structure.
+                </p>
+                <img class="img" src="./Pics/Portfolio_Pic.png" alt="TUI project mockup">
+
+                <div class="project-links">
+
+                    <a href="https://github.com/iamln84" target="_blank" aria-label="GitHub">
+                         <p>Github <i class='bx bxs-right-top-arrow-circle'></i></p>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Live Site">
+                        <p>Live Site <i class='bx bxl-jquery bx-rotate-180'></i></p>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Project #5 -->
+            <article class="project-card">
+                <span class="project-label">Product Design</span>
+                <h3 class="project-title">TUI Experiences</h3>
+                <p class="project-description">
+                    A full redesign of the Shaking Crab website, transforming the original layout into a cleaner, more modern, and more user-friendly experience. 
+                    This version emphasizes visual clarity, responsive behavior, and a more intentional structure.
+                </p>
+                <img class="img" src="./Pics/Portfolio_Pic.png" alt="TUI project mockup">
+
+                <div class="project-links">
+
+                    <a href="https://github.com/iamln84" target="_blank" aria-label="GitHub">
+                         <p>Github <i class='bx bxs-right-top-arrow-circle'></i></p>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Live Site">
+                        <p>Live Site <i class='bx bxl-jquery bx-rotate-180'></i></p>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Project #6 -->
+            <article class="project-card">
+                <span class="project-label">Product Design</span>
+                <h3 class="project-title">TUI Experiences</h3>
+                <p class="project-description">
+                    A full redesign of the Shaking Crab website, transforming the original layout into a cleaner, more modern, and more user-friendly experience. 
+                    This version emphasizes visual clarity, responsive behavior, and a more intentional structure.
+                </p>
+                <img class="img" src="./Pics/Portfolio_Pic.png" alt="TUI project mockup">
+
+                <div class="project-links">
+
+                    <a href="https://github.com/iamln84" target="_blank" aria-label="GitHub">
+                         <p>Github <i class='bx bxs-right-top-arrow-circle'></i></p>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Live Site">
+                        <p>Live Site <i class='bx bxl-jquery bx-rotate-180'></i></p>
+                    </a>
+
+                </div>
+
+            </article>
+        </div>
+    </section>
+
+
+    <section id="Contact">
+        <h2 class="CM">Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
+            <input type="hidden" name="access_key" value="697b99fc-ee9d-4b4a-a973-53698076ad12">
+            <div class="form-row">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+
+    <footer class="footer">
+    <span class="footer__copy">
+            &#169; 2026 | Developed by iamln84 | All Rights Reserved
+        </span>
+    </footer>
+
+    <i id="backToTop" class='bx bxs-send bx-rotate-270'></i>
+
+    
+    <script>
+    document.getElementById("backToTop").addEventListener("click", () => {
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+        });
+    });
+    </script>
+
+
+    <script>
+  const titles = ["Data Scientist", "Full-Stack Engineer"];
+  const typingElement = document.querySelector(".typing");
+
+  let titleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function type() {
+    const currentTitle = titles[titleIndex];
+
+    if (!isDeleting) {
+      typingElement.textContent = currentTitle.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentTitle.length) {
+        setTimeout(() => isDeleting = true, 1000);
+      }
+    } else {
+      typingElement.textContent = currentTitle.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        titleIndex = (titleIndex + 1) % titles.length;
+      }
+    }
+
+    setTimeout(type, isDeleting ? 60 : 80);
+  }
+
+  type();
+</script>
+
+
+<script>
+const root = document.documentElement;
+const lightIcon = document.getElementById("lightIcon");
+const darkIcon = document.getElementById("darkIcon");
+
+darkIcon.addEventListener("click", () => {
+  root.setAttribute("data-theme", "dark");
+  darkIcon.style.display = "none";
+  lightIcon.style.display = "block";
+  localStorage.setItem("theme", "dark");
+});
+
+lightIcon.addEventListener("click", () => {
+  root.setAttribute("data-theme", "light");
+  lightIcon.style.display = "none";
+  darkIcon.style.display = "block";
+  localStorage.setItem("theme", "light");
+});
+
+// Load saved theme
+const saved = localStorage.getItem("theme");
+if (saved) {
+  root.setAttribute("data-theme", saved);
+  if (saved === "dark") {
+    darkIcon.style.display = "none";
+    lightIcon.style.display = "block";
+  }
+}
+</script>
+
+
+<script>
+  const lightMobile = document.getElementById("lightIconMobile");
+  const darkMobile = document.getElementById("darkIconMobile");
+
+  lightMobile.addEventListener("click", () => {
+    document.body.classList.remove("dark-mode");
+  });
+
+  darkMobile.addEventListener("click", () => {
+    document.body.classList.add("dark-mode");
+  });
+</script>
+
+
+<script>
+const edgeMenu = document.querySelector('.edge-menu');
+
+let startX = 0;
+let currentX = 0;
+let isSwiping = false;
+let isClosingSwipe = false;
+
+// Swipe from left edge to OPEN
+document.addEventListener('touchstart', (e) => {
+  if (e.touches[0].clientX < 20 && !edgeMenu.classList.contains('active')) {
+    isSwiping = true;
+    startX = e.touches[0].clientX;
+  }
+
+  // Swipe inside menu to CLOSE
+  if (edgeMenu.classList.contains('active') && e.touches[0].clientX < edgeMenu.offsetWidth) {
+    isClosingSwipe = true;
+    startX = e.touches[0].clientX;
+  }
+});
+
+document.addEventListener('touchmove', (e) => {
+  currentX = e.touches[0].clientX;
+
+  // Opening swipe
+  if (isSwiping) {
+    const translateX = Math.min(currentX - startX, edgeMenu.offsetWidth);
+    if (translateX > 0) {
+      edgeMenu.style.left = `${translateX - edgeMenu.offsetWidth}px`;
+    }
+  }
+
+  // Closing swipe
+  if (isClosingSwipe) {
+    const translateX = currentX - startX;
+    if (translateX < 0) {
+      edgeMenu.style.left = `${translateX}px`;
+    }
+  }
+});
+
+document.addEventListener('touchend', () => {
+  // Finish opening
+  if (isSwiping) {
+    const moved = currentX - startX;
+    if (moved > 80) {
+      edgeMenu.classList.add('active');
+      edgeMenu.style.left = '0';
+    } else {
+      edgeMenu.classList.remove('active');
+      edgeMenu.style.left = `-${edgeMenu.offsetWidth}px`;
+    }
+  }
+
+  // Finish closing
+  if (isClosingSwipe) {
+    const moved = currentX - startX;
+    if (moved < -60) {
+      edgeMenu.classList.remove('active');
+      edgeMenu.style.left = `-${edgeMenu.offsetWidth}px`;
+    } else {
+      edgeMenu.style.left = '0';
+    }
+  }
+
+  isSwiping = false;
+  isClosingSwipe = false;
+});
+
+// Tap outside to close
+document.addEventListener('click', (e) => {
+  if (!edgeMenu.contains(e.target)) {
+    edgeMenu.classList.remove('active');
+    edgeMenu.style.left = `-${edgeMenu.offsetWidth}px`;
+  }
+});
+
+// Tap inside to close
+edgeMenu.addEventListener('click', () => {
+  edgeMenu.classList.remove('active');
+  edgeMenu.style.left = `-${edgeMenu.offsetWidth}px`;
+});
+
+</script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
